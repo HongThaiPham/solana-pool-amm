@@ -22,8 +22,8 @@ pub struct Swap<'info> {
     #[account(
     init_if_needed,
     payer = authority,
-    associated_token::mint = x_token,
-    associated_token::authority = treasurer
+    associated_token::mint = y_token,
+    associated_token::authority = authority
   )]
     pub dst_y_account: Account<'info, token::TokenAccount>,
     #[account(seeds = [b"treasurer", &pool.key().to_bytes()], bump)]

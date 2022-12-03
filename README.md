@@ -34,6 +34,9 @@
 emit(CreatePoolEvent { data })
 ```
 
+- tinh toan sử dụng u128 tránh overflow -> cast về lại u64 -> return
+- thực hiện nhân trước chia sau
+
 ### Testing
 
 - pre-test
