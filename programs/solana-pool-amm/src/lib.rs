@@ -14,7 +14,7 @@ pub use errors::*;
 declare_id!("Fg6PaFpoGXkYsidMpWTK6W2BeZ7FEfcYkg476zPFsLnS");
 
 #[program]
-pub mod private_coaching_amm_prog {
+pub mod solana_pool_amm {
     use crate::instructions::CreatePool;
 
     use super::*;

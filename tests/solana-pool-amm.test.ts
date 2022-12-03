@@ -18,8 +18,7 @@ describe("solana-pool-amm", () => {
   const provider = AnchorProvider.env();
   setProvider(provider);
 
-  const program =
-    workspace.PrivateCoachingAmmProg as Program<PrivateCoachingAmmProg>;
+  const program = workspace.SolanaPoolAmm as Program<SolanaPoolAmm>;
   const spl = Spl.token();
 
   const xToken = new web3.Keypair();
